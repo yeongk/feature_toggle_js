@@ -1,5 +1,5 @@
 {
-  "name": "eze-feature-toggle",
+  "name": "eze-feature-toggle-js",
   "version": "1.0.0",
   "description": "feature toggle wrapper for launchdarkly",
   "main": "index.js",
