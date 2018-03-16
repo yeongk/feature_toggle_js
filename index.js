@@ -1,4 +1,5 @@
 const LDClient = require('ldclient-js');
+const clientSideId = '5a95abb5d4851c1d5b80c582'
 const FIXED_KEY = 'cecf006d836e7099afd856f061d43904' // MD5 hash of 'ezesoft'
 
 let ldClient = {};
@@ -74,6 +75,18 @@ function getKey(user) {
         }
     }
 }
+
+(function getEzeFeatureToggle() {
+    return init(clientSideId, null)
+        .then(ezeFeatureToggle => {
+            window.ezeFeatureToggle = ezeFeatureToggle;
+        })
+        .catch(err => {
+            logger.error(err);
+            throw err;
+        })
+})();
+
 
 module.exports = {
     init
