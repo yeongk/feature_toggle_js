@@ -1,0 +1,32 @@
+{
+  "name": "eze-feature-toggle",
+  "version": "1.0.0",
+  "description": "feature toggle wrapper for launchdarkly",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "feature",
+    "toggle"
+  ],
+  "author": "Yeong Kim",
+  "license": "MIT",
+  "dependencies": {
+    "ldclient-js": "^1.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.18.1",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "gruntify-eslint": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "load-grunt-tasks": "^3.5.2",
+    "mocha": "^5.0.1",
+    "mockery": "^2.1.0"
+  }
+}
